@@ -1,7 +1,7 @@
 
-import './App.css';
-
-import React from 'react'
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import ButtonGroup from '@mui/material/ButtonGroup';
 
 function Header () {
   return (
@@ -28,6 +28,12 @@ function Article(){
     <article>
       <h1>Welcome</h1>
       <h2>Web Universe</h2>
+      <br />
+      <ButtonGroup variant="contained" aria-label="outlined primary button group">
+      <Button>Create</Button>
+      <Button>Update</Button>
+    </ButtonGroup>
+    <Button variant="contained"> Delete</Button>
     </article>
   );
 }
